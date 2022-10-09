@@ -1,0 +1,23 @@
+.section {
+    padding: 94px 0;
+}
+
+.section__title {
+text-align: center;
+margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
+.section--pt-none {
+padding-top: 0;
+}
+
+.section--grey-background {
+background-color: var(--team-section-background-color);
+}

@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+}
+.features__item {
+    width: calc((100% - 30px * 3) / 4);
+
+&:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.features__iconbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--team-section-background-color);
+    border-radius: 4px;
+}
+
+
+
+.features__heading {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-text-color);
+}
