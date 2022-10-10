@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- custom styles -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -42,25 +42,18 @@
               >
             </li>
             <li class="site-nav__item">
-              <a
-                class="link site-nav__link"
-                href="./portfolio.html"
+              <a class="link site-nav__link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
             <li class="site-nav__item">
-              <a class="link site-nav__link" href="#contacts-link"
-                >Контакти</a
-              >
+              <a class="link site-nav__link" href="#contacts-link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li class="contacts__item">
-            <a
-              class="contacts__link link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="18" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -68,10 +61,7 @@
             >
           </li>
           <li class="contacts__item">
-            <a
-              class="contacts__link link"
-              href="tel:+380961111111"
-            >
+            <a class="contacts__link link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -79,6 +69,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -89,15 +88,13 @@
             Замовити послугу
           </button>
         </div>
-       
-        </div>
       </section>
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features list">
             <li class="features__item">
-              <div class="features__icon">
+              <div class="features__iconbox">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -121,7 +118,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icon">
+              <div class="features__iconbox">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -132,7 +129,7 @@
               </p>
             </li>
             <li class="features__item">
-              <div class="features__icon">
+              <div class="features__iconbox">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -146,7 +143,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section--pt-none">
+      <section class="section section__works section--pt-none">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works list">
@@ -193,9 +190,7 @@
               />
               <div class="team__content">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
-                <p class="team__description" lang="en">
-                  Product Designer
-                </p>
+                <p class="team__description" lang="en">Product Designer</p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -261,10 +256,8 @@
               />
               <div class="team__content">
                 <h3 class="team__title">Ольга Рєпіна</h3>
-                <p class="team__description" lang="en">
-                  Frontend Developer
-                </p>
-                 <ul class="socials list">
+                <p class="team__description" lang="en">Frontend Developer</p>
+                <ul class="socials list">
                   <li class="socials__item">
                     <a
                       class="socials__link"
@@ -553,7 +546,9 @@
                 >
               </li>
               <li class="address__item">
-                <a class="address__contacts link" href="mailto:info@devstudio.com"
+                <a
+                  class="address__contacts link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -633,7 +628,6 @@
               type="email"
               name="sign-in"
               class="footer-signup__input"
-              type="text"
               placeholder="E-mail"
             />
             <button type="submit" class="footer-signup__btn btn">
@@ -649,71 +643,193 @@
         </form>
       </div>
     </footer>
-     <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button data-modal-close type="button" class="modal__close-btn">
-              <svg class="modal__close-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-close-modal"></use>
-              </svg>
-            </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close type="button" class="modal__close-btn">
+          <svg class="modal__close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
 
-            <form class="registration" name="registration" autocomplete="off">
-              <strong class="registration__heading">Залиште свої дані, ми вам передзвонимо</strong>
-              <label class="registration__label">
-                <span class="registration__title">Ім'я</span>
-                <input
-                  class="registration__input"
-                  type="text"
-                  required
-                  name="registration-name"
-                />
-                <svg class="registration__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-name"></use>
-                </svg>
-              </label>
-              <label class="registration__label">
-                <span class="registration__title">Телефон</span>
-                <input
-                  class="registration__input"
-                  type="tel"
-                  required
-                  name="registration-phone"
-                />
-                <svg class="registration__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </label>
-              <label class="registration__label">
-                <span class="registration__title">Пошта</span>
-                <input
-                  class="registration__input"
-                  type="email"
-                  required
-                  name="registration-email"
-                />
-                <svg class="registration__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </label>
-              <label class="registration__label registration__label--mb">
-                <span class="registration__title">Коментар</span>
-                <textarea class="registration__comment" name="registration-comment" rows="7" placeholder="Введіть текст"></textarea>
-              </label>
+        <form class="registration" name="registration" autocomplete="off">
+          <strong class="registration__heading"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <label class="registration__label">
+            <span class="registration__title">Ім'я</span>
+            <input
+              class="registration__input"
+              type="text"
+              required
+              name="registration-name"
+            />
+            <svg class="registration__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </label>
+          <label class="registration__label">
+            <span class="registration__title">Телефон</span>
+            <input
+              class="registration__input"
+              type="tel"
+              required
+              name="registration-phone"
+            />
+            <svg class="registration__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="registration__label">
+            <span class="registration__title">Пошта</span>
+            <input
+              class="registration__input"
+              type="email"
+              required
+              name="registration-email"
+            />
+            <svg class="registration__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="registration__label registration__label--mb">
+            <span class="registration__title">Коментар</span>
+            <textarea
+              class="registration__comment"
+              name="registration-comment"
+              rows="7"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
 
-              <label class="checkbox">
-                <input class="checkbox__input" type="checkbox" name="registration-checkbox" required>
-                <svg class="checkbox__icon" width="15" height="16">
-                  
-                  <use class="checkbox__icon-unchecked" href="./images/icons.svg#icon-unchecked"></use>
-                  <use class="checkbox__icon-checked" href="./images/icons.svg#icon-checked"></use>
-                </svg>
-                <span class="checkbox__text">Погоджуюся з розсилкою та приймаю
-                   <a class="checkbox__link" href="#" target="_blank" rel="noreferrer noopener nofollow"> Умови договору</a> 
-                </span>
-              </label>
-              <button class="registration__btn btn" type="submit">Відправити</button>
-            </form>
-          </div>
+          <label class="checkbox">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="registration-checkbox"
+              required
+            />
+            <svg class="checkbox__icon" width="15" height="16">
+              <use
+                class="checkbox__icon-unchecked"
+                href="./images/icons.svg#icon-unchecked"
+              ></use>
+              <use
+                class="checkbox__icon-checked"
+                href="./images/icons.svg#icon-checked"
+              ></use>
+            </svg>
+            <span class="checkbox__text"
+              >Погоджуюся з розсилкою та приймаю
+              <a
+                class="checkbox__link"
+                href="#"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                Умови договору</a
+              >
+            </span>
+          </label>
+          <button class="registration__btn btn" type="submit">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="menu-container container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="list mobile-site-nav__list">
+          <li class="mobile-site-nav__item">
+            <a
+              class="link mobile-site-nav__link mobile-site-nav__link--current-page"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-site-nav__item">
+            <a class="link mobile-site-nav__link" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-site-nav__item">
+            <a class="link mobile-site-nav__link" href="#contacts-link"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link-tel link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__link-mail link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-socials__item">
+            <a
+              class="mobile-socials__link link"
+              href="https://www.linkedin.com "
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="linkedin"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

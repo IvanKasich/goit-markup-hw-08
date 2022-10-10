@@ -6,7 +6,14 @@
 
 .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    
+    
+    @media screen and (min-width: 768px) {
+        align-items: baseline;
+    }
 }
 
 .footer__logo {
@@ -29,6 +36,12 @@
     color: var(--secondary-title-text-color);
 }
 
-.footer__socials {
-    margin-right: 93px;
+.footer__socials {   
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 93px;
+    }
 }

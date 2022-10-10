@@ -1,5 +1,13 @@
 .site-nav__list {
-    display: flex;
+
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        
+    }
 }
 
 .site-nav__item:not(:last-child) {

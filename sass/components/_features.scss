@@ -1,11 +1,23 @@
 .features {
     display: flex;
+    gap: 30px;
+    flex-direction: column;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+   
 }
 .features__item {
-    width: calc((100% - 30px * 3) / 4);
 
-&:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px * 3) / 4);
+   
+
     }
 }
 
@@ -27,7 +39,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--title-text-color);
+    
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
