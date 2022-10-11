@@ -26,6 +26,20 @@
   fill: currentColor;
 }
 
+.contacts__icon-tel {
+  @media screen and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+.contacts__icon-mail {
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .contacts__link {
   display: flex;
   align-items: center;
