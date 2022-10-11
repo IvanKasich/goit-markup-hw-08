@@ -1082,7 +1082,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow: scroll none;
+  overflow-y: scroll;
   opacity: 1;
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -1090,11 +1090,6 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    width: 100%;
-  }
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1389,8 +1384,11 @@ body {
   margin-bottom: 64px;
 }
 
-.mobile-contacts__link-tel {
+.mobile-contacts__item-tel {
   margin-bottom: 32px;
+}
+
+.mobile-contacts__link-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
