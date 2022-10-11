@@ -1,9 +1,19 @@
 .grid {
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
 }
 
+.grid__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
 .grid__item {
+  @media screen and (min-width: 768px) {
     margin: 15px;
+  }
 }
